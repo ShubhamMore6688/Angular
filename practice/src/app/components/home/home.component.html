@@ -2,9 +2,9 @@
     <h1 class="mt-5 mb-4">Employee Data</h1>
   
     <div class="row" >
-      <div class="col-md-4" *ngFor="let emp of employee" [ngStyle]="{opacity: emp.active ? 1 : 0.5}">
+      <div class="col-md-4" *ngFor="let emp of employee; index as i" [ngStyle]="{opacity: emp.active ? 1 : 0.5}">
         <div class="card mb-4">
-          <img src="../../../assets/Images/profile1.png" class="card-img-top" alt="Employee 1">
+            <img [src]="emp.url" class="card-img-top" alt="Employee 1" [ngClass]="{'profile-img': true}">
           <div class="card-body">
             <h5 class="card-title">{{emp.name}}</h5>
             <p class="card-text" [ngClass]="{
@@ -15,33 +15,27 @@
             <p class="card-text">Department: {{emp.department}}</p>
             <p class="card-text">Age: {{emp.age}}</p>
             <p class="card-text">salary: {{emp.salary}}</p>
-            <a href="#" class="btn btn-primary" >View Profile</a>
+            <!-- <a href="#" class="btn btn-primary" >View Profile</a> -->
+            <button type="button" class="btn btn-success m-2" (click)="changeToActive(emp)" >Active</button>
+            <button type="button" class="btn btn-danger m-2" (click)="changeToInactive(emp)" >Inactive</button>
+            <button type="button" class="btn btn-warning m-2" (click)="deletEmployee(i)" >Delete</button>
+
           </div>
         </div>
       </div>
-      
-      <!-- <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="../../../assets/Images/profile2.jpeg" class="card-img-top" alt="Employee 2">
-          <div class="card-body">
-            <h5 class="card-title">Jane Smith</h5>
-            <p class="card-text">Position: Graphic Designer</p>
-            <p class="card-text">Experience: 3 years</p>
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-md-4">
-        <div class="card mb-4">
-          <img src="../../../assets/Images/profile3.png" class="card-img-top" alt="Employee 3">
-          <div class="card-body">
-            <h5 class="card-title">Michael Johnson</h5>
-            <p class="card-text">Position: Marketing Manager</p>
-            <p class="card-text">Experience: 7 years</p>
-            <a href="#" class="btn btn-primary">View Profile</a>
-          </div>
-        </div>
-      </div> -->
     </div>
   </div>
+
+<div>
+    <h4>Add employee</h4>
+    <form (ngSubmit)="onSubmit(id.value, name.value, age.value, department.value, salary.value)">
+        <input type="number" name="id" id="empId" placeholder="id" #id>
+        <input type="text" name="name" id="empName" placeholder="name" #name>
+        <input type="number" name="age" id="empAge" placeholder="age" #age>
+        <input type="text" name="department" id="empDept" placeholder="department" #department>
+        <input type="number" name="salary" id="empSalary" placeholder="salary" #salary>
+        <button type="submit">Submit</button>
+
+    </form>
+</div>  
+
