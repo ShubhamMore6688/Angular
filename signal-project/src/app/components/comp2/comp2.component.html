@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">(-)</th>
+        <th scope="col">Qty</th>
+        <th scope="col">(+)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            <button type="button" class="btn btn-danger" (click)="onDecrement()"> - </button>
+        </td>
+        <td>{{qty()}}</td>
+        <td>
+            <button type="button" class="btn btn-success" (click)="onIncrement()"> + </button>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
