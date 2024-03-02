@@ -5,3 +5,9 @@
 .inactive{
     color: red;
 }
+
+.profile-img {
+    width: 100%; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the entire space */
+}
