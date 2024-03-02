@@ -1,0 +1,50 @@
+<!-- <div *ngIf="isAvailable">
+    <h1>Welcomome, user</h1>
+</div> -->
+
+1. isLoggedIn
+
+<div *ngIf="isLoggedIn">
+    <h4>Welcome, User</h4>
+    <button>Logout</button>
+</div>
+<br>
+<div *ngIf="!isLoggedIn">
+    <h4>Please log in</h4>
+    <button>Login</button>
+</div>
+
+
+2. fetch data 
+
+<br><br>
+<div *ngIf="employee">
+    <strong>Name: </strong> {{employee.name}} <br>
+    <strong>Age: </strong> {{employee.age}} <br>
+    <strong>Department: </strong> {{employee.department}} <br>
+</div>
+<br>
+<div *ngIf="!employee">
+    <h3>No employee data</h3>
+</div>
+
+3. Else and Then:
+
+<br><br>
+<div *ngIf="emp1.active; then thenPart; else elsePart">
+   
+</div>
+<br>
+
+<ng-template #thenPart>
+    <strong>Name: </strong> {{emp1.name}} <br>
+    <strong>Age: </strong> {{emp1.age}} <br>
+    <strong>Active: </strong> {{emp1.active}} <br>
+    <strong>Department: </strong> {{emp1.department}} <br>
+</ng-template>
+<br>
+
+<ng-template #elsePart> 
+    <h3>No employee data</h3>
+    <button (click)="emp1.active=true" >Active Employee</button>
+</ng-template>

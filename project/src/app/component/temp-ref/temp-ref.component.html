@@ -1,0 +1,35 @@
+<!-- template reference variable give the access of entire html tag along whith its attributes, values etc -->
+1. Input field 
+
+<span>Input: </span>
+<input type="text" #inputVal> <br><br>
+<button (click)="getInputVal(inputVal)">Submit</button> <br><br>
+Value: {{value}}
+<br><br>
+2. Checkbox
+<br><br>
+<input type="checkbox" name="checkbox" id="checkb" #checkVal>
+<button (click)="getCheckboxVal(checkVal)">Submit</button>
+<br><br>
+3. Radio button 
+<br><br>
+<input type="radio" name="gender" value="male" #m> Male
+<input type="radio" name="gender" value="female" #f> Female
+
+<button (click)="getRadioVal(m.checked ? m.value : f.value)">Submit</button>
+<br><br>
+
+4. Select dropdown
+
+<br><br>
+<select #optionVal>
+    <option value="angular">Angular</option>
+    <option value="react">React</option>
+    <option value="vue">Vue</option>
+    <option value="javascript">Javascript</option>
+
+</select>
+
+<button (click)="getOptionVal(optionVal)">Submit</button><br>
+  Option: {{option}}
+<br><br>

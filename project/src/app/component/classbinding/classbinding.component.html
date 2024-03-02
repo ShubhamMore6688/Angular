@@ -1,0 +1,44 @@
+<!-- <div [class.myclass] = true >
+    Uxtrendz
+</div> -->
+
+<!-- class and style binding -->
+<!-- <div class="emplist">
+    <div class="empolyee" [style.background-color] = "emp1.active ? 'green': 'red'">
+        <span [class.active]="emp1.active">{{emp1.active ? 'Active' : "Inactive"}}</span>
+        <h5>{{emp1.name}}
+            <small>{{emp1.designation}}</small>
+        </h5>
+    </div>
+</div> -->
+
+
+<!-- ngClass and ngStyle -->
+<!-- this is used to assine multiple classes and styles at a time -->
+<!-- <div class="emplist">
+    <div >
+        <span>{{emp1.active ? 'Active' : "Inactive"}}</span>
+        <h5 [ngClass]="{
+            'active': emp1.active,
+            'inactive': !emp1.active
+        }">{{emp1.name}}
+            <small>{{emp1.designation}}</small>
+        </h5>
+    </div>
+</div> -->
+
+
+<!-- ngStyle -->
+
+<div class="emplist">
+    <div >
+        <span>{{emp1.active ? 'Active' : "Inactive"}}</span>
+        <h5 [ngStyle]="{
+            'background-color': 'yellow',
+            'padding':'10px',
+            'opacity': emp1.active ? '1' : 0.5
+        }">{{emp1.name}}
+            <small>{{emp1.designation}}</small>
+        </h5>
+    </div>
+</div>

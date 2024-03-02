@@ -1,0 +1,38 @@
+<!-- dynamic data display -->
+<div>
+    <h1>{{name}}</h1>
+    <h4>{{'Welcome, ' + employee.name}}</h4>
+    <p>{{employee.name + ' is a ' + employee.position}}</p>
+</div>
+
+<br>
+<!-- we can also use built in javascript methods -->
+<br>
+{{name.length}}
+{{name.includes('k')}}
+
+<br>
+<!-- also we can display methods  -->
+{{calcuateTotal()}}
+
+<br>
+<!-- as per editMode text on the button get changed -->
+<button>{{editMode ? 'Update Employee' : 'Add Employee'}}</button>
+
+<br>
+<!-- bonus tip (don't use string interpolation for this)
+<div class="{{myClass}}">Uxtrends</div>
+<br>
+<img src="{{myImg}}" alt="">
+<br>
+<input type="text" value="{{name}}"> -->
+
+<br><br><br>
+
+
+<!-- interpolation vs property bindind -->
+
+<!-- interpolation - we use this to dynamically display some data  -->
+<!-- property binding - we use this to dynamically give the value to html attribute -->
+
+<app-propertybinding></app-propertybinding>

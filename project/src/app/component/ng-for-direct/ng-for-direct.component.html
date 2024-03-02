@@ -1,0 +1,38 @@
+<ul>
+    <li *ngFor="let item of employee">
+        {{item.name}} | {{item.department}}
+    </li>
+</ul>
+
+<table width="50%">
+    <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Dept</th>
+        <th>Salary</th>
+    </tr>
+    <tr *ngFor="let item of employee; let i = index; first as firstItem; last as lastItem; odd as oddRow; even as evenRow" 
+        [ngClass]="{
+            'first': firstItem,
+            'last': lastItem,
+            'oddRow': oddRow,
+            'evenRow': evenRow
+        }">
+        <td>{{i+1}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.age}}</td>
+        <td>{{item.department}}</td>
+        <td>{{item.salary}}</td>
+    </tr>
+</table>
+
+<br><br>
+
+2. conditional logic with ngFor 
+
+<div *ngFor="let item of employee">
+    <div *ngIf="item.age > 20">
+        {{item.name}} | {{item.age}}
+    </div>
+</div>

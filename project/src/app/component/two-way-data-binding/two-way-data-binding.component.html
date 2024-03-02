@@ -1,0 +1,41 @@
+# two way data binding 
+<br><br>
+<input type="email" placeholder="Enter your email" [(ngModel)]="email"><br>
+Email: {{email}} is available
+<br><br>
+# checkbox and radio buttons
+<br><br>
+<input type="checkbox" name="checkbox" [(ngModel)]="isChecked">
+Check: {{isChecked}}
+
+<br><br>
+# radio buttons
+<br><br>
+<input type="radio" value="male" [(ngModel)]="gender"> Male
+<input type="radio" value="female" [(ngModel)]="gender"> Female
+<br><br>
+Gender: {{gender}}
+
+<br><br>
+
+# range
+
+<br><br>
+
+<input type="range" [(ngModel)]="volume">
+volume: {{volume}}
+
+
+<br><br>
+
+# dropdown
+
+<select [(ngModel)]="value">
+    <option value="angular">Angular</option>
+    <option value="react">React</option>
+    <option value="vue">Vue</option>
+    <option value="javascript">Javascript</option>
+
+</select>
+
+Value: {{value}}
