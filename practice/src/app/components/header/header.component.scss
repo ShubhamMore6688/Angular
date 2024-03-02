@@ -1,0 +1,31 @@
+.header{
+    background-color: goldenrod;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+
+   
+}
+
+.heading h3{
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.list{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    ul{
+        list-style: none;
+        padding: 10px;
+        cursor: pointer;
+
+        li{
+            font-size: 17px;
+           font-weight: 600;
+           
+        }
+    }
+}
