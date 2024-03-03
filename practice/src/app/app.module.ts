@@ -7,13 +7,15 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
+// import { CustomeDirectiveDirective } from './components/appDirectives/custome-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    // CustomeDirectiveDirective
   ],
   imports: [
     BrowserModule,

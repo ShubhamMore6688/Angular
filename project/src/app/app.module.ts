@@ -15,6 +15,8 @@ import { TempRefComponent } from './component/temp-ref/temp-ref.component';
 import { NgIfDirectComponent } from './component/ng-if-direct/ng-if-direct.component';
 import { NgSwitchDirectComponent } from './component/ng-switch-direct/ng-switch-direct.component';
 import { NgForDirectComponent } from './component/ng-for-direct/ng-for-direct.component';
+import { CustomDirectiveDirective } from './component/appDirective/custom-directive.directive';
+import { DirectivesComponent } from './component/directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { NgForDirectComponent } from './component/ng-for-direct/ng-for-direct.co
     NgIfDirectComponent,
     NgSwitchDirectComponent,
     NgForDirectComponent,
+    CustomDirectiveDirective,
+    DirectivesComponent,
     
   ],
   imports: [

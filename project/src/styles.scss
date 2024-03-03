@@ -3,4 +3,19 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
+
+.card-warning {
+  background-color: #FFF8E1;
+  border: 1px solid #ffcc26;
+  border-radius: 8px;
+  width: 200px;
+  height: 130px;
+  padding: 10px;
+  box-shadow: 0 2px 6px 0 rgb(226, 184, 46);
+  color: #403c2f;
+}
+
+.card{
+  background-color: gold;
+}
