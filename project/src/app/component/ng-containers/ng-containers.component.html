@@ -1,0 +1,45 @@
+<br><br>
+1. To reduce extra DOM element <br><br>
+<div class="card-success">
+    <button *ngIf="!isLoggedIn" (click)="isLoggedIn=true" >Login</button>
+    <!-- in this we are creating one extra div for the invisible container to avoid this we can use ng-container -->
+
+    <!-- <div *ngIf="isLoggedIn">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem fuga iste dignissimos ad dolor quod quo neque consequatur suscipit fugit.
+        </p>
+        <button>View Profile</button>
+    </div> -->
+
+    <ng-container *ngIf="isLoggedIn">
+        <button *ngIf="!isLoggedIn" (click)="isLoggedIn=true">Login</button>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus doloremque sint architecto quasi labore magnam exercitationem ipsa alias unde quod.</p>
+    </ng-container>
+
+</div>
+<br><br>
+2. User list
+<br><br>
+
+<!-- // we cannot use two directives on element to solve this problem we can use  -->
+
+<ng-container *ngIf="isLoggedIn">
+    <div class="container" *ngFor="let item of employee">
+        <ng-container *ngIf="item.age>=40"> 
+            {{item.name}}
+        </ng-container>
+    </div>
+</ng-container>
+
+
+3. complex use case 
+
+<div class="display-div">
+    Employee #01 <ng-container *ngIf="isLoggedIn">
+        name is {{emp.name}}.
+    </ng-container> 
+    He/She is a acive employee
+    <ng-container *ngIf="emp.year">
+        since {{emp.year}}
+    </ng-container>
+</div>
