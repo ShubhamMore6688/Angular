@@ -17,6 +17,7 @@ import { NgSwitchDirectComponent } from './component/ng-switch-direct/ng-switch-
 import { NgForDirectComponent } from './component/ng-for-direct/ng-for-direct.component';
 import { CustomDirectiveDirective } from './component/appDirective/custom-directive.directive';
 import { DirectivesComponent } from './component/directives/directives.component';
+import { NgContainersComponent } from './component/ng-containers/ng-containers.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { DirectivesComponent } from './component/directives/directives.component
     NgForDirectComponent,
     CustomDirectiveDirective,
     DirectivesComponent,
+    NgContainersComponent,
     
   ],
   imports: [
