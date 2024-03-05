@@ -1,0 +1,17 @@
+<div *ngIf="!emp.active; else elseBlock">
+    <h2>
+        User is not active
+    </h2>
+</div>
+
+
+<!-- ng-template are used to create the div which we can show or hide on conditional bases -->
+
+<ng-template #elseBlock>
+    <div>
+        <strong>Name: </strong><span>{{emp.name}}</span>
+        <strong>Age: </strong><span>{{emp.age}}</span>
+        <strong>Dept: </strong><span>{{emp.department}}</span>
+
+    </div>
+</ng-template>

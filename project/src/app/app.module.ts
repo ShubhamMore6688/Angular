@@ -18,6 +18,7 @@ import { NgForDirectComponent } from './component/ng-for-direct/ng-for-direct.co
 import { CustomDirectiveDirective } from './component/appDirective/custom-directive.directive';
 import { DirectivesComponent } from './component/directives/directives.component';
 import { NgContainersComponent } from './component/ng-containers/ng-containers.component';
+import { NgTemplateComponent } from './component/ng-template/ng-template.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { NgContainersComponent } from './component/ng-containers/ng-containers.c
     CustomDirectiveDirective,
     DirectivesComponent,
     NgContainersComponent,
+    NgTemplateComponent,
     
   ],
   imports: [
