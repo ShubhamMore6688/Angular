@@ -5,7 +5,7 @@
 </div>
 
 
-<!-- ng-template are used to create the div which we can show or hide on conditional bases -->
+<!-- ng-template are used to create the template content which we can show or hide on conditional bases -->
 
 <ng-template #elseBlock>
     <div>
@@ -15,3 +15,26 @@
 
     </div>
 </ng-template>
+
+
+<!-- we have to one template and show the template content at different places -->
+
+<ng-template #card let-name="name">
+    <div>
+        <h4>Uxtrendz</h4>
+        <p>Name: {{name}}</p>
+        <div>
+            <button>Submit</button>
+        </div>
+    </div>
+</ng-template>
+
+<!-- we can show that template using ngTemplateOutlet -->
+<!-- <ng-container *ngTemplateOutlet="card" ></ng-container> -->
+
+
+<!-- we can pass dynamic data also -->
+<ng-container *ngTemplateOutlet="card; context: {name: 'John'}" ></ng-container><br>
+<ng-container *ngTemplateOutlet="card; context: {name: 'Max'}" ></ng-container><br>
+<ng-container *ngTemplateOutlet="card; context: {name: 'Anup'}" ></ng-container><br>
+
