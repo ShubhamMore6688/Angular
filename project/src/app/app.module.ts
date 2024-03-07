@@ -19,6 +19,11 @@ import { CustomDirectiveDirective } from './component/appDirective/custom-direct
 import { DirectivesComponent } from './component/directives/directives.component';
 import { NgContainersComponent } from './component/ng-containers/ng-containers.component';
 import { NgTemplateComponent } from './component/ng-template/ng-template.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { SidemenuComponent } from './component/sidemenu/sidemenu.component';
+import { MainComponent } from './component/main/main.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { HomepageComponent } from './component/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,11 @@ import { NgTemplateComponent } from './component/ng-template/ng-template.compone
     DirectivesComponent,
     NgContainersComponent,
     NgTemplateComponent,
+    NavbarComponent,
+    SidemenuComponent,
+    MainComponent,
+    FooterComponent,
+    HomepageComponent,
     
   ],
   imports: [
