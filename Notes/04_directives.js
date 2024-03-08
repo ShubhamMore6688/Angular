@@ -12,3 +12,4 @@
 // typescript --> compiler --> javascript
 
 //with typescript we can catch the errors at compile time
+ 
