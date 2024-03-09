@@ -24,6 +24,8 @@ import { SidemenuComponent } from './component/sidemenu/sidemenu.component';
 import { MainComponent } from './component/main/main.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
+import { CustomPropBindingComponent } from './component/custom-prop-binding/custom-prop-binding.component';
+import { UsersComponent } from './component/custom-prop-binding/users/users.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { HomepageComponent } from './component/homepage/homepage.component';
     MainComponent,
     FooterComponent,
     HomepageComponent,
+    CustomPropBindingComponent,
+    UsersComponent,
     
   ],
   imports: [
