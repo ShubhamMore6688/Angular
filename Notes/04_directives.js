@@ -13,3 +13,5 @@
 
 //with typescript we can catch the errors at compile time
  
+
+// to transfer data between two components we can use @input
