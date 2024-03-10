@@ -49,4 +49,8 @@ export class CustomPropBindingComponent {
         salary: 75000
     }
 ];
+
+totalUser = this.employee.length;
+totalActiveUser = this.employee.filter(p => p.active === true).length;
+totalinActiveUser = this.employee.filter(p => p.active === false).length;
 }

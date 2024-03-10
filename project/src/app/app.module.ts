@@ -26,6 +26,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { CustomPropBindingComponent } from './component/custom-prop-binding/custom-prop-binding.component';
 import { UsersComponent } from './component/custom-prop-binding/users/users.component';
+import { FilterUserComponent } from './component/custom-prop-binding/filter-user/filter-user.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { UsersComponent } from './component/custom-prop-binding/users/users.comp
     HomepageComponent,
     CustomPropBindingComponent,
     UsersComponent,
+    FilterUserComponent,
     
   ],
   imports: [
