@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar>
 
 
 
@@ -13,4 +13,8 @@
         </div>
     </div>
 </div>
-<app-footer></app-footer>
+<app-footer></app-footer> -->
+
+
+<app-navbar (sendSearchText)="getSearchText($event)"></app-navbar>
+<app-custom-prop-binding [searchText]="searchText"></app-custom-prop-binding>

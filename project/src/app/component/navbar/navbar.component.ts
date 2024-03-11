@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -12,4 +12,13 @@ export class NavbarComponent {
   //  this.folderOpen = !this.folderOpen;
   // }
 
+  @Output()
+  sendSearchText: EventEmitter<string> = new EventEmitter<string>()
+
+  searchText: string = '';
+  
+  onInputText(){
+    // console.log(this.searchText)
+    this.sendSearchText.emit(this.searchText)
+  }
 }

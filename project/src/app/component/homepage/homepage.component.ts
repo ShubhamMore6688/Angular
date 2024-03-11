@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomepageComponent {
 
+  searchText:string = ''
+
+  getSearchText(value: string){
+    this.searchText = value
+  }
+
 }

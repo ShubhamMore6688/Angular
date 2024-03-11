@@ -8,5 +8,7 @@
 <div class="container" *ngFor="let item of employee" >
     <h1 class="mt-5 mb-4">Employee Data</h1>
   
-    <app-users  [emp]="item" *ngIf="usersToBeDisplay === 'All' || item.active.toString() === usersToBeDisplay"></app-users>
+    <!-- <app-users  [emp]="item" *ngIf="usersToBeDisplay === 'All' || item.active.toString() === usersToBeDisplay"></app-users> -->
+    <app-users  [emp]="item" *ngIf="searchText === '' || item.name.includes(searchText)" ></app-users>
+
 </div>

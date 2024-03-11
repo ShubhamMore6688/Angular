@@ -2,6 +2,9 @@
     <div class="menu">
         <i class="fa-solid fa-bars"></i>
     </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Enter the Product" [(ngModel)]="searchText" (input)="onInputText()">
+    </div>
     <div class="list">       
         <ul>
             <li><i class="fa-solid fa-house"></i></li>

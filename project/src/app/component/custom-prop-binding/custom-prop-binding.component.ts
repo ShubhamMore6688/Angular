@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-custom-prop-binding',
@@ -58,5 +58,10 @@ usersToBeDisplay: string = 'All'
 
 onFilterChange(value: string){
     this.usersToBeDisplay = value;
+
+
 }
+@Input()
+searchText:string = ''
+
 }
