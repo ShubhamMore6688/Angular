@@ -1,13 +1,13 @@
 <div class="filter-container">
     <span>Filter: </span>
 
-    <input type="radio" name="filter" value="All"/>
+    <input type="radio" name="filter" value="All" (change)="onSelectedRadioBtnChange()" [(ngModel)]="selectedFilterRadioButton"/>
     <span>{{'All: '+ All}}</span>
 
-    <input type="radio" name="filter" value="All"/>
+    <input type="radio" name="filter" value="true" (change)="onSelectedRadioBtnChange()" [(ngModel)]="selectedFilterRadioButton"/>
     <span>{{'Active: '+ Active}}</span>
 
-    <input type="radio" name="filter" value="All"/>
+    <input type="radio" name="filter" value="false" (change)="onSelectedRadioBtnChange()" [(ngModel)]="selectedFilterRadioButton"/>
     <span>{{'inActive: '+ inActive}}</span>
 
     
