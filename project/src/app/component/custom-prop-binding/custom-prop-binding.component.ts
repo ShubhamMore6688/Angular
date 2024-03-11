@@ -53,4 +53,10 @@ export class CustomPropBindingComponent {
 totalUser = this.employee.length;
 totalActiveUser = this.employee.filter(p => p.active === true).length;
 totalinActiveUser = this.employee.filter(p => p.active === false).length;
+
+usersToBeDisplay: string = 'All'
+
+onFilterChange(value: string){
+    this.usersToBeDisplay = value;
+}
 }

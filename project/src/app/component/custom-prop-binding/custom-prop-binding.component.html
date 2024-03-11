@@ -1,6 +1,12 @@
-<app-filter-user [All]="totalUser" [Active]="totalActiveUser" [inActive]="totalinActiveUser"></app-filter-user>
-<div class="container">
+<app-filter-user 
+    [All]="totalUser" 
+    [Active]="totalActiveUser" 
+    [inActive]="totalinActiveUser"
+    (selectedFilterRadioButtonChange)="onFilterChange($event)"
+    >
+</app-filter-user>
+<div class="container" *ngFor="let item of employee" >
     <h1 class="mt-5 mb-4">Employee Data</h1>
   
-    <app-users *ngFor="let item of employee" [emp]="item"></app-users>
+    <app-users  [emp]="item" *ngIf="usersToBeDisplay === 'All' || item.active.toString() === usersToBeDisplay"></app-users>
 </div>
