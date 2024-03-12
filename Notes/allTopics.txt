@@ -1,0 +1,26 @@
+component
+
+# directives
+components directives (components we have created are this type of directives)
+structural directives (ngIf, ngFor, ngSwitch)
+attribute directives (ngClass, ngStyle)
+
+# data binding
+string interpolation
+property binding
+event binding
+
+* two way data binding
+
+- ngFor
+- ngIf
+- ngStyle
+- ngClass
+
+# custom property binding
+@Input - sent data from parent component to child component
+@Output - sent data from child component to parent component
+
+# template reference variable
+ - trv on html element
+ - trv on component
