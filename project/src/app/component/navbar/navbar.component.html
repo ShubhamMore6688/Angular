@@ -3,7 +3,8 @@
         <i class="fa-solid fa-bars"></i>
     </div>
     <div class="searchbar">
-        <input type="text" placeholder="Enter the Product" [(ngModel)]="searchText" (input)="onInputText()">
+        <input type="text" placeholder="Enter the Product" #searchText>
+        <button (click)="onInputText(searchText)">Search</button>
     </div>
     <div class="list">       
         <ul>

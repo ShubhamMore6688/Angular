@@ -17,8 +17,10 @@ export class NavbarComponent {
 
   searchText: string = '';
   
-  onInputText(){
+  onInputText(item: HTMLInputElement){
     // console.log(this.searchText)
+    this.searchText = item.value;
+    // after pressing search button then only the search in user list is perform
     this.sendSearchText.emit(this.searchText)
   }
 }
