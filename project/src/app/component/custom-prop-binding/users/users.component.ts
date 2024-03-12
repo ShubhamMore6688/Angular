@@ -1,5 +1,6 @@
 import { Input } from '@angular/core';
 import { Component } from '@angular/core';
+import { User } from 'src/app/Models/User';
 
 @Component({
   selector: 'app-users',
@@ -8,12 +9,5 @@ import { Component } from '@angular/core';
 })
 export class UsersComponent {
   @Input()
-  emp: {
-    id: number,
-    name: string,
-    active: boolean,
-    age: number,
-    department: string,
-    salary: number
-  }
+  emp: User;
 }

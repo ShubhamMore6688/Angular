@@ -5,7 +5,7 @@
     (selectedFilterRadioButtonChange)="onFilterChange($event)"
     >
 </app-filter-user>
-<div class="container" *ngFor="let item of employee" >
+<div class="container" *ngFor="let item of employee"  (click)="selectedUser = item">
     <h1 class="mt-5 mb-4">Employee Data</h1>
   
     <!-- <app-users  [emp]="item" *ngIf="usersToBeDisplay === 'All' || item.active.toString() === usersToBeDisplay"></app-users> -->

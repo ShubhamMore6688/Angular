@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { User } from 'src/app/Models/User';
 
 @Component({
   selector: 'app-custom-prop-binding',
@@ -7,6 +8,7 @@ import { Component, Input } from '@angular/core';
 })
 export class CustomPropBindingComponent {
 
+  selectedUser: User;  
   employee = [
     {
         id: 1,
