@@ -1,10 +1,7 @@
 <div class="container mt-5" >
     <div class="row row-cols-3" >
       <div class="col" *ngFor="let item of products">
-      
-
-            <app-shoes-list [shoes]="item" *ngIf="searchText === '' || item.name.includes(searchText)"></app-shoes-list>
-       
+            <app-shoes-list [shoes]="item" *ngIf="searchText === '' || item.name.includes(searchText)"></app-shoes-list>      
       </div>
     </div>  
 </div>  
