@@ -24,3 +24,9 @@ event binding
 # template reference variable
  - trv on html element
  - trv on component
+
+ # ViewChild() with DOM element
+
+ // topic remain
+
+ - ViewChild() with component

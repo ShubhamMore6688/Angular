@@ -1,0 +1,9 @@
+<div class="container m-2">
+    <span>Filter: </span>
+    <input type="radio" name="filter" id="all" value="All" (change)="onSelectButton()" [(ngModel)]="filterShoes">
+    <span> All  </span>
+    <input type="radio" name="filter" id="active" value="true" (change)="onSelectButton()" [(ngModel)]="filterShoes">
+    <span> Active </span>
+    <input type="radio" name="filter" id="inactive" value="false" (change)="onSelectButton()" [(ngModel)]="filterShoes">
+    <span> Inactive </span>
+</div>

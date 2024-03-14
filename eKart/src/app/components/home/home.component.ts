@@ -278,4 +278,9 @@ export class HomeComponent {
       "slug": "michael-feburary-sk8-hi"
     }
   ]
+
+  selectedRadioButton: string = 'All'
+  getSelectedButton(value: string){
+    this.selectedRadioButton = value
+  }
 }

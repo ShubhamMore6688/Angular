@@ -8,6 +8,8 @@ import { ShoesListComponent } from './components/home/shoes-list/shoes-list.comp
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { MainComponent } from './components/main/main.component';
+import { FilterShoesComponent } from './components/home/filter-shoes/filter-shoes.component';
+import { CarouselComponent } from './components/home/carousel/carousel.component';
 
 
 @NgModule({
@@ -17,6 +19,8 @@ import { MainComponent } from './components/main/main.component';
     ShoesListComponent,
     NavbarComponent,
     MainComponent,
+    FilterShoesComponent,
+    CarouselComponent,
    
   ],
   imports: [

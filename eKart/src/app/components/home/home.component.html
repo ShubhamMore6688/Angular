@@ -1,7 +1,12 @@
-<div class="container mt-5" >
+<app-carousel></app-carousel>
+<app-filter-shoes (selectedRadioButton)="getSelectedButton($event)" ></app-filter-shoes>
+<div class="container mt-3" >
     <div class="row row-cols-3" >
       <div class="col" *ngFor="let item of products">
-            <app-shoes-list [shoes]="item" *ngIf="searchText === '' || item.name.includes(searchText)"></app-shoes-list>      
+        <div *ngIf="selectedRadioButton === 'All' || item.is_in_inventory.toString() === selectedRadioButton">
+          <app-shoes-list [shoes]="item" *ngIf="searchText === '' || item.name.includes(searchText)"></app-shoes-list>      
+
+        </div>
       </div>
     </div>  
 </div>  
