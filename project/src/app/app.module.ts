@@ -28,6 +28,7 @@ import { CustomPropBindingComponent } from './component/custom-prop-binding/cust
 import { UsersComponent } from './component/custom-prop-binding/users/users.component';
 import { FilterUserComponent } from './component/custom-prop-binding/filter-user/filter-user.component';
 import { UserDetailComponent } from './component/custom-prop-binding/user-detail/user-detail.component';
+import { ViewchildrenComponent } from './component/viewchildren/viewchildren.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { UserDetailComponent } from './component/custom-prop-binding/user-detail
     UsersComponent,
     FilterUserComponent,
     UserDetailComponent,
+    ViewchildrenComponent,
     
   ],
   imports: [
