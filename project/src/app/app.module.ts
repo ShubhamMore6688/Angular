@@ -30,6 +30,7 @@ import { FilterUserComponent } from './component/custom-prop-binding/filter-user
 import { UserDetailComponent } from './component/custom-prop-binding/user-detail/user-detail.component';
 import { ViewchildrenComponent } from './component/viewchildren/viewchildren.component';
 import { NgtemplateComponent } from './component/ngtemplate/ngtemplate.component';
+import { NgcontentComponent } from './component/ngcontent/ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { NgtemplateComponent } from './component/ngtemplate/ngtemplate.component
     UserDetailComponent,
     ViewchildrenComponent,
     NgtemplateComponent,
+    NgcontentComponent,
     
   ],
   imports: [
