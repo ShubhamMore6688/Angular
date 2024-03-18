@@ -31,6 +31,8 @@ import { UserDetailComponent } from './component/custom-prop-binding/user-detail
 import { ViewchildrenComponent } from './component/viewchildren/viewchildren.component';
 import { NgtemplateComponent } from './component/ngtemplate/ngtemplate.component';
 import { NgcontentComponent } from './component/ngcontent/ngcontent.component';
+import { ContentchildComponent } from './component/contentchild/contentchild.component';
+import { ChildComponent } from './component/contentchild/child/child.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +64,8 @@ import { NgcontentComponent } from './component/ngcontent/ngcontent.component';
     ViewchildrenComponent,
     NgtemplateComponent,
     NgcontentComponent,
+    ContentchildComponent,
+    ChildComponent,
     
   ],
   imports: [
