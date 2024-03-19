@@ -1,4 +1,4 @@
-import { Component, ContentChild, ElementRef } from '@angular/core';
+import { Component, ContentChild, ContentChildren, ElementRef, Query, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-child',
@@ -7,8 +7,11 @@ import { Component, ContentChild, ElementRef } from '@angular/core';
 })
 export class ChildComponent {
   @ContentChild('para') paraE1: ElementRef
-
+  @ContentChildren('para') paraList: QueryList<ElementRef>
   clickHandler(){
-    console.log(this.paraE1.nativeElement)
+    // console.log(this.paraE1.nativeElement)
+    console.log(this.paraList.forEach(e => {
+      console.log(e.nativeElement)
+    }))
   }
 }
