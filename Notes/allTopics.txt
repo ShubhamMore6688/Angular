@@ -27,6 +27,10 @@ event binding
 
  # ViewChild() with DOM element
 
+ # component initialization
+ // whenever the selector of component class in used this will initiate constructor of that component class
+ 
  // topic remain
 
  - ViewChild() with component
+

@@ -33,6 +33,7 @@ import { NgtemplateComponent } from './component/ngtemplate/ngtemplate.component
 import { NgcontentComponent } from './component/ngcontent/ngcontent.component';
 import { ContentchildComponent } from './component/contentchild/contentchild.component';
 import { ChildComponent } from './component/contentchild/child/child.component';
+import { ComponentInitializationComponent } from './component/component-initialization/component-initialization.component';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,7 @@ import { ChildComponent } from './component/contentchild/child/child.component';
     NgcontentComponent,
     ContentchildComponent,
     ChildComponent,
+    ComponentInitializationComponent,
     
   ],
   imports: [
