@@ -34,6 +34,7 @@ import { NgcontentComponent } from './component/ngcontent/ngcontent.component';
 import { ContentchildComponent } from './component/contentchild/contentchild.component';
 import { ChildComponent } from './component/contentchild/child/child.component';
 import { ComponentInitializationComponent } from './component/component-initialization/component-initialization.component';
+import { NgonchangeComponent } from './component/ngonchange/ngonchange.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +69,7 @@ import { ComponentInitializationComponent } from './component/component-initiali
     ContentchildComponent,
     ChildComponent,
     ComponentInitializationComponent,
+    NgonchangeComponent,
     
   ],
   imports: [

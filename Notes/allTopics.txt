@@ -29,8 +29,10 @@ event binding
 
  # component initialization
  // whenever the selector of component class in used this will initiate constructor of that component class
- 
+
  // topic remain
 
  - ViewChild() with component
 
+// change detection cycle run when Input is change
+// change is DOM element(click, change)

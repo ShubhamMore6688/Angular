@@ -1,1 +1,6 @@
-<p>component-initialization works!</p>
+<div>
+
+    <input type="text" #input>
+    <button (click)="onClick(input)">Submit</button>
+    <app-ngonchange [message]="value"></app-ngonchange>
+</div>
