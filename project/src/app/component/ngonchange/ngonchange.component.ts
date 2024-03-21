@@ -6,7 +6,9 @@ import { Component, ElementRef, Input, OnChanges, OnInit, ViewChild } from '@ang
   styleUrls: ['./ngonchange.component.scss']
 })
 export class NgonchangeComponent implements OnChanges, OnInit {
-  @Input() message: string;
+  // for this ngonchange do not run again because this message storing the reference of the array
+  // so at each append we are not changing the reference
+  @Input() message: string[];
   @ViewChild('para') temppara: ElementRef
   // ngonchanges is run only when the value of input variable is changes
   ngOnChanges(){
