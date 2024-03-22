@@ -14,8 +14,10 @@ export class ComponentInitializationComponent {
   //   console.log(this.message)
   //   console.log(this.title)
   // }
-  value: string[] = ["hello", "hi"];
+  // value: string[] = ["hello", "hi"];
+  value: string = '';
+
   onClick(inputEl: HTMLInputElement){
-    this.value.push(inputEl.value);
+    this.value = inputEl.value;
   }
 }
