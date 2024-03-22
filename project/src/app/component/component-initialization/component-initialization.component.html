@@ -3,6 +3,6 @@
     <input type="text" #input>
     <button (click)="onClick(input)">Submit</button>
     <app-ngonchange [message]="value">
-        <p #para>this is projected content</p>
+        <p #para>this is projected content: {{value}}</p>
     </app-ngonchange>
 </div>

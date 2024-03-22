@@ -1,11 +1,11 @@
-import { AfterContentInit, Component, ContentChild, DoCheck, ElementRef, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, Component, ContentChild, DoCheck, ElementRef, Input, OnChanges, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-ngonchange',
   templateUrl: './ngonchange.component.html',
   styleUrls: ['./ngonchange.component.scss']
 })
-export class NgonchangeComponent implements OnChanges, OnInit, DoCheck, AfterContentInit {
+export class NgonchangeComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked {
   // for this ngonchange do not run again because this message storing the reference of the array
   // so at each append we are not changing the reference
   // @Input() message: string[];
@@ -44,5 +44,16 @@ export class NgonchangeComponent implements OnChanges, OnInit, DoCheck, AfterCon
       console.log("projected content in ngaftercontentinit", this.Para.nativeElement)
   }
 
-  
+  //ngaftercontentchecked lifecycle hook is called during every change detection cycle after angular has 
+  // finished initializing and checking projected content
+  // this hook is called after every change in the projected content
+  //angular update the properties decorated with @ContentChild & @ContentChildren decorator just before this hook is raised
+  //ngaftercontentinit is called after projected content is initialized
+  //ngaftercontentchecked is called whenever projected content initailized, checked, updated
+
+  //ngaftercontentinit and ngaftercontentchecked are component only hooks they are not available for directives
+
+  ngAfterContentChecked() {
+      console.log("ngaftercontentchecked is called")
+  }
 }
