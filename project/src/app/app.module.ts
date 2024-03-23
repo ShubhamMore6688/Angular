@@ -35,6 +35,7 @@ import { ContentchildComponent } from './component/contentchild/contentchild.com
 import { ChildComponent } from './component/contentchild/child/child.component';
 import { ComponentInitializationComponent } from './component/component-initialization/component-initialization.component';
 import { NgonchangeComponent } from './component/ngonchange/ngonchange.component';
+import { setBackground } from './CustomDirectives/setBackground.directive';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { NgonchangeComponent } from './component/ngonchange/ngonchange.component
     ChildComponent,
     ComponentInitializationComponent,
     NgonchangeComponent,
+    setBackground
     
   ],
   imports: [
