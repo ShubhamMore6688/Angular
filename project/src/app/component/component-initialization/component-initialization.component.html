@@ -2,7 +2,10 @@
 
     <input type="text" #input>
     <button (click)="onClick(input)">Submit</button>
-    <app-ngonchange [message]="value">
+    <app-ngonchange [message]="value" *ngIf="!toDestroy">
         <p #para>this is projected content: {{value}}</p>
     </app-ngonchange>
+
+    <br><br>
+    <button (click)="handleDestroy()">Show/Hide</button>
 </div>
