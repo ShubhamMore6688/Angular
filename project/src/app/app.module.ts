@@ -38,6 +38,7 @@ import { NgonchangeComponent } from './component/ngonchange/ngonchange.component
 import { setBackground } from './CustomDirectives/setBackground.directive';
 import { HostlistnerDirective } from './CustomDirectives/hostlistner.directive';
 import { HostbindingDirective } from './CustomDirectives/hostbinding.directive';
+import { ConditionalDirDirective } from './CustomDirectives/conditional-dir.directive';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { HostbindingDirective } from './CustomDirectives/hostbinding.directive';
     NgonchangeComponent,
     setBackground,
     HostlistnerDirective,
-    HostbindingDirective
+    HostbindingDirective,
+    ConditionalDirDirective
     
   ],
   imports: [

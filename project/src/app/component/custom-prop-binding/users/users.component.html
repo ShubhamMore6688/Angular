@@ -1,5 +1,7 @@
-<div class="row" appHostlistner>
-    <div class="col-md-4" [ngStyle]="{opacity: emp.active ? 1 : 0.5}" >
+<div class="row" appHostlistner >
+    <!-- <div class="col-md-4" [ngStyle]="{opacity: emp.active ? 1 : 0.5}" > -->
+    <div class="col-md-4" [appConditionalDir]="!emp.active" >
+
       <div class="card mb-4" >
           
         <div class="card-body" >
