@@ -36,6 +36,8 @@ import { ChildComponent } from './component/contentchild/child/child.component';
 import { ComponentInitializationComponent } from './component/component-initialization/component-initialization.component';
 import { NgonchangeComponent } from './component/ngonchange/ngonchange.component';
 import { setBackground } from './CustomDirectives/setBackground.directive';
+import { HostlistnerDirective } from './CustomDirectives/hostlistner.directive';
+import { HostbindingDirective } from './CustomDirectives/hostbinding.directive';
 
 @NgModule({
   declarations: [
@@ -71,7 +73,9 @@ import { setBackground } from './CustomDirectives/setBackground.directive';
     ChildComponent,
     ComponentInitializationComponent,
     NgonchangeComponent,
-    setBackground
+    setBackground,
+    HostlistnerDirective,
+    HostbindingDirective
     
   ],
   imports: [

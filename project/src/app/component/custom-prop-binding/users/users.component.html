@@ -1,8 +1,8 @@
-<div class="row" >
-    <div class="col-md-4" [ngStyle]="{opacity: emp.active ? 1 : 0.5}">
-      <div class="card mb-4">
+<div class="row" appHostlistner>
+    <div class="col-md-4" [ngStyle]="{opacity: emp.active ? 1 : 0.5}" >
+      <div class="card mb-4" >
           
-        <div class="card-body">
+        <div class="card-body" >
           <h5 class="card-title">{{emp.name}}</h5>
           <p class="card-text">Active: {{emp.active}}</p>
           <p class="card-text">Department: {{emp.department}}</p>
