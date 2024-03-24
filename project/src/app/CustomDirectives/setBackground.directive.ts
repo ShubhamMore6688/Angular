@@ -1,4 +1,4 @@
-import { Directive, ElementRef, OnInit, Renderer2 } from "@angular/core";
+import { Directive, ElementRef, Input, OnInit, Renderer2 } from "@angular/core";
 
 @Directive({
     // when this selector is used on the dom element the constructor is called and the reference of that dom element
@@ -7,6 +7,11 @@ import { Directive, ElementRef, OnInit, Renderer2 } from "@angular/core";
 })
 export class setBackground implements OnInit{
     // private element: ElementRef
+
+    // @Input('setBackground') backColor: string = '#36454F'
+    // @Input() textColor: string = 'white'
+
+    @Input('setBackground') setBackcolorAndTextcolor: {backColor: string, textColor: string}
     constructor(private element: ElementRef, private renderer: Renderer2){
         // this.element = element
     }
@@ -25,8 +30,8 @@ export class setBackground implements OnInit{
         // this.element.nativeElement.style.backgroundColor = '#36454F'
         // this.element.nativeElement.style.color = 'white'
 
-        this.renderer.setStyle(this.element.nativeElement, 'backgroundColor', '#36454F')
-        this.renderer.setStyle(this.element.nativeElement, 'color', 'white')
+        this.renderer.setStyle(this.element.nativeElement, 'backgroundColor', this.setBackcolorAndTextcolor.backColor)
+        this.renderer.setStyle(this.element.nativeElement, 'color', this.setBackcolorAndTextcolor.textColor)
     }
 
 
