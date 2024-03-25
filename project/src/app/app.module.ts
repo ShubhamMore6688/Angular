@@ -39,6 +39,8 @@ import { setBackground } from './CustomDirectives/setBackground.directive';
 import { HostlistnerDirective } from './CustomDirectives/hostlistner.directive';
 import { HostbindingDirective } from './CustomDirectives/hostbinding.directive';
 import { ConditionalDirDirective } from './CustomDirectives/conditional-dir.directive';
+import { ClassDirective } from './CustomDirectives/class.directive';
+import { ClassComponent } from './component/class/class.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +79,9 @@ import { ConditionalDirDirective } from './CustomDirectives/conditional-dir.dire
     setBackground,
     HostlistnerDirective,
     HostbindingDirective,
-    ConditionalDirDirective
+    ConditionalDirDirective,
+    ClassDirective,
+    ClassComponent
     
   ],
   imports: [
