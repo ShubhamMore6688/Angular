@@ -41,6 +41,7 @@ import { HostbindingDirective } from './CustomDirectives/hostbinding.directive';
 import { ConditionalDirDirective } from './CustomDirectives/conditional-dir.directive';
 import { ClassDirective } from './CustomDirectives/class.directive';
 import { ClassComponent } from './component/class/class.component';
+import { StyleDirective } from './CustomDirectives/style.directive';
 
 @NgModule({
   declarations: [
@@ -81,7 +82,8 @@ import { ClassComponent } from './component/class/class.component';
     HostbindingDirective,
     ConditionalDirDirective,
     ClassDirective,
-    ClassComponent
+    ClassComponent,
+    StyleDirective
     
   ],
   imports: [

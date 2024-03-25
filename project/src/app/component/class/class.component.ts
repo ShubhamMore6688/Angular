@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./class.component.scss']
 })
 export class ClassComponent {
-
+  active: boolean = true
 }
