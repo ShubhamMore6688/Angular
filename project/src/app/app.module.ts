@@ -42,6 +42,7 @@ import { ConditionalDirDirective } from './CustomDirectives/conditional-dir.dire
 import { ClassDirective } from './CustomDirectives/class.directive';
 import { ClassComponent } from './component/class/class.component';
 import { StyleDirective } from './CustomDirectives/style.directive';
+import { StructuralDirectiveComponent } from './component/structural-directive/structural-directive.component';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,8 @@ import { StyleDirective } from './CustomDirectives/style.directive';
     ConditionalDirDirective,
     ClassDirective,
     ClassComponent,
-    StyleDirective
+    StyleDirective,
+    StructuralDirectiveComponent
     
   ],
   imports: [

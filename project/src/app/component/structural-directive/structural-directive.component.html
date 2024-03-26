@@ -1,0 +1,26 @@
+<div>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <button (click)="displayPara()">+</button>
+</div>
+<!-- <div *ngIf="display; else para">
+    <h3>subtitle</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis amet alias est id consequuntur, porro reprehenderit ipsa impedit tenetur sapiente?</p>
+</div> -->
+
+<ng-template #para>
+    <div>
+        <h5>subtitle 2</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam illo veniam laudantium culpa cumque fugiat quia corporis, praesentium tempora natus at doloremque soluta eum necessitatibus qui exercitationem dolorem dolore fugit.</p>
+    </div>
+</ng-template>
+
+
+<!-- behind the scene of structural directive -->
+
+<ng-template [ngIf]="display" [ngIfElse]="para">
+    <div>
+        <h3>subtitle</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis amet alias est id consequuntur, porro reprehenderit ipsa impedit tenetur sapiente?</p>
+    </div>
+</ng-template>
