@@ -44,6 +44,9 @@ import { ClassComponent } from './component/class/class.component';
 import { StyleDirective } from './CustomDirectives/style.directive';
 import { StructuralDirectiveComponent } from './component/structural-directive/structural-directive.component';
 import { IfDirective } from './CustomDirectives/if.directive';
+import { ViewEncapsulationComponent } from './component/view-encapsulation/view-encapsulation.component';
+import { Child1Component } from './component/view-encapsulation/child1/child1.component';
+import { Child2Component } from './component/view-encapsulation/child2/child2.component';
 
 @NgModule({
   declarations: [
@@ -87,7 +90,10 @@ import { IfDirective } from './CustomDirectives/if.directive';
     ClassComponent,
     StyleDirective,
     StructuralDirectiveComponent,
-    IfDirective
+    IfDirective,
+    ViewEncapsulationComponent,
+    Child1Component,
+    Child2Component
     
   ],
   imports: [
