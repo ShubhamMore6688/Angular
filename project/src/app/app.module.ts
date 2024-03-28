@@ -47,6 +47,11 @@ import { IfDirective } from './CustomDirectives/if.directive';
 import { ViewEncapsulationComponent } from './component/view-encapsulation/view-encapsulation.component';
 import { Child1Component } from './component/view-encapsulation/child1/child1.component';
 import { Child2Component } from './component/view-encapsulation/child2/child2.component';
+import { CreateServiceComponent } from './component/create-service/create-service.component';
+import { HeaderComponent } from './component/create-service/header/header.component';
+import { HomeHeaderComponent } from './component/create-service/home-header/home-header.component';
+import { HeroComponent } from './component/create-service/home-header/hero/hero.component';
+import { SidebarComponent } from './component/create-service/home-header/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -93,7 +98,12 @@ import { Child2Component } from './component/view-encapsulation/child2/child2.co
     IfDirective,
     ViewEncapsulationComponent,
     Child1Component,
-    Child2Component
+    Child2Component,
+    CreateServiceComponent,
+    HeaderComponent,
+    HomeHeaderComponent,
+    HeroComponent,
+    SidebarComponent
     
   ],
   imports: [
