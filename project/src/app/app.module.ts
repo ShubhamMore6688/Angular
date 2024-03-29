@@ -53,6 +53,10 @@ import { HomeHeaderComponent } from './component/create-service/home-header/home
 import { HeroComponent } from './component/create-service/home-header/hero/hero.component';
 import { SidebarComponent } from './component/create-service/home-header/sidebar/sidebar.component';
 import { SubscribeService } from './Services/subscribe.service';
+import { UserDetailsComponent } from './component/create-service/home-header/user-details/user-details.component';
+import { UserListComponent } from './component/create-service/home-header/user-details/user-list/user-list.component';
+import { UserService } from './Services/user.service';
+
 
 @NgModule({
   declarations: [
@@ -104,7 +108,9 @@ import { SubscribeService } from './Services/subscribe.service';
     HeaderComponent,
     HomeHeaderComponent,
     HeroComponent,
-    SidebarComponent
+    SidebarComponent,
+    UserDetailsComponent,
+    UserListComponent
     
   ],
   imports: [
@@ -112,7 +118,7 @@ import { SubscribeService } from './Services/subscribe.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [SubscribeService],
+  providers: [SubscribeService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

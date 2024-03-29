@@ -1,0 +1,20 @@
+
+<!-- table -->
+<table class="user-table">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Gender</th>
+            <th>Subtype</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="user-detail" *ngFor="let usr of userlist">
+            <td class="user-name">{{usr.name}}</td>
+            <td class="user-gender">{{usr.gender}}</td>
+            <td class="user-subtype">{{usr.subType}}</td>
+            <td class="user-status">{{usr.status}}</td>
+        </tr>
+    </tbody>
+</table>

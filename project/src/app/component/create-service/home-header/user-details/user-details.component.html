@@ -1,0 +1,39 @@
+<!-- form -->
+<div class="form-container">
+    <form id="user-form">
+        <div class="form-group">
+            <label for="user-name">User Name:</label>
+            <input type="text" id="user-name" name="user-name" required [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+            <label for="user-gender">Gender:</label>
+            <select id="user-gender" name="user-gender" required [(ngModel)]="gender">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="user-subtype">Subtype:</label>
+            <input type="text" id="user-subtype" name="user-subtype" required [(ngModel)]="subType">
+        </div>
+        <div class="form-group">
+            <label for="user-status">Status:</label>
+            <input type="text" id="user-status" name="user-status" required [(ngModel)]="status">
+        </div>
+        <div class="form-group">
+            
+            <button type="submit" class="submit-btn" value="Submit" (click)="onSubmit()">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
