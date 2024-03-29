@@ -5,7 +5,9 @@ import { SubscribeService } from 'src/app/Services/subscribe.service';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  providers: [SubscribeService]
+  // providers give the instance of SubscribeService class
+  // this instance is different from other instance of SubscribeService class
+  // providers: [SubscribeService]
 })
 export class HeaderComponent {
 

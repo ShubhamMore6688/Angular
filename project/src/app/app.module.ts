@@ -52,6 +52,7 @@ import { HeaderComponent } from './component/create-service/header/header.compon
 import { HomeHeaderComponent } from './component/create-service/home-header/home-header.component';
 import { HeroComponent } from './component/create-service/home-header/hero/hero.component';
 import { SidebarComponent } from './component/create-service/home-header/sidebar/sidebar.component';
+import { SubscribeService } from './Services/subscribe.service';
 
 @NgModule({
   declarations: [
@@ -111,7 +112,7 @@ import { SidebarComponent } from './component/create-service/home-header/sidebar
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SubscribeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
