@@ -56,6 +56,7 @@ import { SubscribeService } from './Services/subscribe.service';
 import { UserDetailsComponent } from './component/create-service/home-header/user-details/user-details.component';
 import { UserListComponent } from './component/create-service/home-header/user-details/user-list/user-list.component';
 import { UserService } from './Services/user.service';
+import { LoggerService } from './Services/logger.service';
 
 
 @NgModule({
@@ -118,7 +119,7 @@ import { UserService } from './Services/user.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [SubscribeService, UserService],
+  providers: [SubscribeService, UserService, LoggerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
