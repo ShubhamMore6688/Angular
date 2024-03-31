@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Newuser } from 'src/app/Models/Newuser';
+
 import { UserService } from 'src/app/Services/user.service';
 
 @Component({
@@ -14,5 +16,9 @@ export class UserListComponent {
   }
 
   userlist = this.userservice.GetAllUsers()
+
+  onUserSelect(user: Newuser){
+    console.log(user)
+  }
   
 }
