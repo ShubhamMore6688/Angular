@@ -57,6 +57,7 @@ import { UserDetailsComponent } from './component/create-service/home-header/use
 import { UserListComponent } from './component/create-service/home-header/user-details/user-list/user-list.component';
 import { UserService } from './Services/user.service';
 import { LoggerService } from './Services/logger.service';
+import { ObservablesComponent } from './component/observables/observables.component';
 
 export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
 
@@ -112,7 +113,8 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     HeroComponent,
     SidebarComponent,
     UserDetailsComponent,
-    UserListComponent
+    UserListComponent,
+    ObservablesComponent
     
   ],
   imports: [

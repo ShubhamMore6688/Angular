@@ -18,7 +18,7 @@ export class UserListComponent {
   userlist = this.userservice.GetAllUsers()
 
   onUserSelect(user: Newuser){
-    console.log(user)
+    console.log(user )
   }
   
 }
