@@ -9,8 +9,8 @@
           <li class="nav-item">
             <!-- href reload the page each time and download all the project bundles each time when we navigate -->
             <!-- <a class="nav-link active" aria-current="page" href="Home">Home</a> -->
-            <a class="nav-link active" aria-current="page" routerLink="Home">Home</a>
-
+            <a class="nav-link active" aria-current="page" routerLink="Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+            <!-- this help to add css class on the active link  -->
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
