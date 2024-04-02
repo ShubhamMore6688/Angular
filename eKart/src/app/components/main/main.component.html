@@ -1,4 +1,5 @@
 <app-navbar (sendSearchText)="getSearchText($event)"></app-navbar>
 
-<app-home [searchText]="searchText"></app-home>
+<!-- <app-home [searchText]="searchText"></app-home> -->
+<router-outlet></router-outlet>
 <app-footer></app-footer>

@@ -11,7 +11,11 @@ import { MainComponent } from './components/main/main.component';
 import { FilterShoesComponent } from './components/home/filter-shoes/filter-shoes.component';
 import { CarouselComponent } from './components/home/carousel/carousel.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { Route, RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  {path: 'Home', component: HomeComponent}
+]
 
 @NgModule({
   declarations: [
@@ -28,7 +32,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(routes),
   ],
   providers: [],
   bootstrap: [AppComponent]
