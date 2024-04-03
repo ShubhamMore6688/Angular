@@ -36,3 +36,9 @@ event binding
 
 // change detection cycle run when Input is change
 // change is DOM element(click, change)
+
+
+//router links 
+1. absolute links - when / is not provided before the route then it is absolute when current active link page has any 
+    other link the after click on that route is appended in front of active link route
+2. relative links - / is provided before the route so when link is clicked the route is appended in front of root route
