@@ -1,12 +1,15 @@
-import { Input } from '@angular/core';
+import { Input, inject } from '@angular/core';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shoes-list',
   templateUrl: './shoes-list.component.html',
-  styleUrls: ['./shoes-list.component.scss']
+  styleUrls: ['./shoes-list.component.scss'],
+  
 })
 export class ShoesListComponent {
+  router: Router = inject(Router);
   @Input()
   shoes: {
     id: number,
@@ -19,5 +22,10 @@ export class ShoesListComponent {
     items_left: number,
     imageURL:string,
     slug: string
+  }
+
+  navigateTo(){
+    // this.router.navigate(['Buy'])
+    this.router.navigateByUrl('Buy')
   }
 }

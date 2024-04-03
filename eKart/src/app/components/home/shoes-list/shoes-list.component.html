@@ -5,7 +5,9 @@
       <h5 class="card-title text-center">{{shoes.name}}</h5>
       <p class="card-text text-center">{{'$' + shoes.price}}</p>
       <div>
-        <button type="button" class="btn btn-secondary m-1" routerLink="Buy" routerLinkActive="active" >Buy</button>
+        <!-- <button type="button" class="btn btn-secondary m-1" routerLink="Buy" routerLinkActive="active" >Buy</button> -->
+        <button type="button" class="btn btn-secondary m-1" (click)="navigateTo()">Buy</button>
+
         <button type="button" class="btn btn-secondary m-1">Add to Cart</button>
         
       </div>

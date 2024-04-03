@@ -39,6 +39,6 @@ event binding
 
 
 //router links 
-1. absolute links - when / is not provided before the route then it is absolute when current active link page has any 
+1. relative links - when / is not provided before the route then it is absolute when current active link page has any 
     other link the after click on that route is appended in front of active link route
-2. relative links - / is provided before the route so when link is clicked the route is appended in front of root route
+2. absolute links - / is provided before the route so when link is clicked the route is appended in front of root route
