@@ -13,10 +13,12 @@ import { CarouselComponent } from './components/home/carousel/carousel.component
 import { FooterComponent } from './components/footer/footer.component';
 import { Route, RouterModule, Routes } from '@angular/router';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { ShoeDetailsComponent } from './components/home/shoe-details/shoe-details.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'Home', component: HomeComponent},
+  {path: 'Shoes/shoe/:ID', component: ShoeDetailsComponent},
   // ** this routes is matches with any path
   {path: '**', component: NotfoundComponent}
 ]
@@ -32,6 +34,7 @@ const routes: Routes = [
     CarouselComponent,
     FooterComponent,
     NotfoundComponent,
+    ShoeDetailsComponent,
    
   ],
   imports: [

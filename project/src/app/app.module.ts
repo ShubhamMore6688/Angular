@@ -58,6 +58,7 @@ import { UserListComponent } from './component/create-service/home-header/user-d
 import { UserService } from './Services/user.service';
 import { LoggerService } from './Services/logger.service';
 import { ObservablesComponent } from './component/observables/observables.component';
+import { LandingPageComponent } from './component/landing-page/landing-page.component';
 
 export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
 
@@ -114,7 +115,8 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     SidebarComponent,
     UserDetailsComponent,
     UserListComponent,
-    ObservablesComponent
+    ObservablesComponent,
+    LandingPageComponent
     
   ],
   imports: [

@@ -25,7 +25,7 @@ export class ShoesListComponent {
   }
 
   navigateTo(){
-    // this.router.navigate(['Buy'])
-    this.router.navigateByUrl('Buy')
+    this.router.navigate(['Shoes','Shoe',':ID'])
+    // this.router.navigateByUrl('Buy')
   }
 }
