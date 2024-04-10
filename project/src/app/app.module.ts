@@ -59,6 +59,7 @@ import { UserService } from './Services/user.service';
 import { LoggerService } from './Services/logger.service';
 import { ObservablesComponent } from './component/observables/observables.component';
 import { LandingPageComponent } from './component/landing-page/landing-page.component';
+import { HeadingComponent } from './component/heading/heading.component';
 
 export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
 
@@ -116,7 +117,8 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     UserDetailsComponent,
     UserListComponent,
     ObservablesComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    HeadingComponent
     
   ],
   imports: [

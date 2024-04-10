@@ -1,3 +1,11 @@
-<div class="head">
-    <h1>this is heading </h1>
-</div>
+
+
+    <div class="flex flex-row flex-nowrap justify-center items-center animate-slide">
+        <div class="m-5" *ngFor="let client of clients">
+            <img [src]="client.logo" [alt]="client.alt">
+         </div>
+    </div>
+
+     
+   
+
