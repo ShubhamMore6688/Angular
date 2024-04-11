@@ -16,6 +16,6 @@
 <app-footer></app-footer> -->
 
 
-<app-navbar (sendSearchText)="getSearchText($event)"></app-navbar>
+<!-- <app-navbar (sendSearchText)="getSearchText($event)"></app-navbar> -->
 <app-custom-prop-binding [searchText]="searchText" #CustomPropBindingComponent></app-custom-prop-binding>
 <app-user-detail *ngIf="CustomPropBindingComponent.selectedUser"></app-user-detail>

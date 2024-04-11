@@ -60,6 +60,14 @@ import { LoggerService } from './Services/logger.service';
 import { ObservablesComponent } from './component/observables/observables.component';
 import { LandingPageComponent } from './component/landing-page/landing-page.component';
 import { HeadingComponent } from './component/heading/heading.component';
+import { TestimonialsComponent } from './component/testimonials/testimonials.component';
+import { AvatarComponent } from './component/avatar/avatar.component';
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { QuillModule } from 'ngx-quill';
+// import { CKEditorModule } from 'ckeditor4-angular';
+
 
 export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
 
@@ -118,13 +126,20 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     UserListComponent,
     ObservablesComponent,
     LandingPageComponent,
-    HeadingComponent
+    HeadingComponent,
+    TestimonialsComponent,
+    AvatarComponent,
+    LoginComponent,
+    SignupComponent,
+    DashboardComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    QuillModule
+    // CKEditorModule
   ],
   // providers: [SubscribeService, UserService, LoggerService],
   // behind the scene

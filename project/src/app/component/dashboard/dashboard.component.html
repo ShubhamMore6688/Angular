@@ -1,0 +1,28 @@
+<div class="h-screen w-full flex">
+    <div class="bg-black w-1/5 h-screen text-gray-500">
+       <div class="flex items-center m-2 h-10">
+        <img src="../../../assets/images/cypresslogo.svg" alt="">
+        <h3 class="mx-2 text-xl font-bold text-Neutrals/neutrals-6">Cypress</h3>
+       </div>
+       <div>
+            <div class="my-1 mt-4"><i class="fa-solid fa-house mx-2"></i>My Workspace</div>
+            <div class="my-1"><i class="fa-solid fa-gear mx-2"></i>Setting</div>
+            <div class="my-1"><i class="fa-solid fa-trash mx-2"></i>Trash</div>
+
+       </div>
+       <div class="mx-2 my-3 text-xs text-gray-700 font-bold">FOLDERS</div>
+
+       
+       
+    </div>
+    <div class=" h-screen w-4/5 flex justify-center items-center">
+        <div>
+            <!-- <ckeditor [(ngModel)]="text" [config]="editorConfig"></ckeditor> -->
+            <!-- <p-editor [(ngModel)]="text" [style]="{ height: '320px' }"></p-editor> -->
+            <quill-editor [(ngModel)]="editorContent" [style]="{ height: '320px' }"></quill-editor>
+
+
+
+        </div>
+    </div>
+</div>
