@@ -65,7 +65,7 @@ import { AvatarComponent } from './component/avatar/avatar.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
-import { QuillModule } from 'ngx-quill';
+
 // import { CKEditorModule } from 'ckeditor4-angular';
 
 
@@ -138,7 +138,7 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    QuillModule
+ 
     // CKEditorModule
   ],
   // providers: [SubscribeService, UserService, LoggerService],
