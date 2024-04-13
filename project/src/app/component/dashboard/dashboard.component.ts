@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class DashboardComponent {
   // text: string = ''
   editorContent: string = '';
+  banner: boolean = true;
   // editorConfig = {
   //   toolbar: [
   //     { name: 'clipboard', items: ['Undo', 'Redo'] },
@@ -24,4 +25,7 @@ export class DashboardComponent {
   //   height:'320px'
   // }
 
+  handleBanner(){
+    this.banner = !this.banner;
+  }
 }

@@ -1,27 +1,58 @@
 <div class="h-screen w-full flex">
-    <div class="bg-black w-1/5 h-screen text-gray-500">
-       <div class="flex items-center m-2 h-10">
-        <img src="../../../assets/images/cypresslogo.svg" alt="">
-        <h3 class="mx-2 text-xl font-bold text-Neutrals/neutrals-6">Cypress</h3>
-       </div>
+    <!-- left container  -->
+    <div class="bg-black w-1/5 h-screen text-gray-500 flex flex-col justify-between">
+        <div>
+            <div class="flex items-center m-2 h-10">
+                <img src="../../../assets/images/cypresslogo.svg" alt="">
+                <h3 class="mx-2 text-xl font-bold text-Neutrals/neutrals-6">Cypress</h3>
+               </div>
+               <div class="ml-3">
+                    <div class="my-1 mt-4"><i class="fa-solid fa-house mx-2"></i>My Workspace</div>
+                    <div class="my-1"><i class="fa-solid fa-gear mx-2"></i>Setting</div>
+                    <div class="my-1"><i class="fa-solid fa-trash mx-2"></i>Trash</div>
+        
+               </div>
+               <div class="mx-3 my-3 text-xs text-gray-700 font-bold">FOLDERS</div>
+        </div>
        <div>
-            <div class="my-1 mt-4"><i class="fa-solid fa-house mx-2"></i>My Workspace</div>
-            <div class="my-1"><i class="fa-solid fa-gear mx-2"></i>Setting</div>
-            <div class="my-1"><i class="fa-solid fa-trash mx-2"></i>Trash</div>
-
+        <div class="h-16 rounded-full mx-4 my-3 bg- flex justify-around items-center bg-primary-purple-900 bg-opacity-50">
+            <app-avatar [name]="'shubham'" [role]="'devops'" [imageUrl]="'../../../assets/avatars/1.png '"></app-avatar>
+            <div>
+                <i class="fa-solid fa-arrow-right-from-bracket text-2xl"></i>
+            </div>
+        </div>
        </div>
-       <div class="mx-2 my-3 text-xs text-gray-700 font-bold">FOLDERS</div>
 
        
        
     </div>
-    <div class=" h-screen w-4/5 flex justify-center items-center">
-        <div>
+    <!-- right container -->
+    <div class=" h-screen w-4/5 flex flex-col">
+        <div class="h-10 w-full flex justify-end my-2">
+            <div>
+                <button (click)="handleBanner()">+</button>
+            </div>
+            <div class="mr-4">
+                <app-avatar [name]="''" [role]="''" [imageUrl]="'../../../assets/avatars/1.png '"></app-avatar>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-center">
+
             <!-- <ckeditor [(ngModel)]="text" [config]="editorConfig"></ckeditor> -->
             <!-- <p-editor [(ngModel)]="text" [style]="{ height: '320px' }"></p-editor> -->
-            <quill-editor [(ngModel)]="editorContent" [style]="{ height: '320px' }"></quill-editor>
+            <!-- <quill-editor [(ngModel)]="editorContent" [style]="{ height: '320px' }"></quill-editor> -->
+            <ng-container *ngIf="banner">
+                <ng-container *ngTemplateOutlet="data"></ng-container>
+            </ng-container>
+            <ng-template #data>
+                <div class="h-36 overflow-hidden object-cover">
+                    <img src="../../../assets/images/banner.jpg" alt="">
+                </div>
+            </ng-template>
 
-
+            <div class="bg-white h-60 w-2/3 my-5">
+                <span>🏠</span>
+            </div>
 
         </div>
     </div>
