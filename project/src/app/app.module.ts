@@ -67,8 +67,9 @@ import { SignupComponent } from './component/signup/signup.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { EmojiPickerComponent } from './component/emoji-picker/emoji-picker.component';
 import { TextEditorComponent } from './component/text-editor/text-editor.component';
-import { NgxSummernoteModule } from 'ngx-summernote';
+
 import { FileStructureComponent } from './component/file-structure/file-structure.component';
+import Editor from 'quill/core/editor';
 
 // import { CKEditorModule } from 'ckeditor4-angular';
 
@@ -145,7 +146,7 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxSummernoteModule,
+    Editor,
     
  
     // CKEditorModule
