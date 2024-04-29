@@ -65,6 +65,10 @@ import { AvatarComponent } from './component/avatar/avatar.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { EmojiPickerComponent } from './component/emoji-picker/emoji-picker.component';
+import { TextEditorComponent } from './component/text-editor/text-editor.component';
+import { NgxSummernoteModule } from 'ngx-summernote';
+import { FileStructureComponent } from './component/file-structure/file-structure.component';
 
 // import { CKEditorModule } from 'ckeditor4-angular';
 
@@ -131,13 +135,18 @@ export const LOGGER_TOKEN = new InjectionToken<LoggerService>('Logger_Service')
     AvatarComponent,
     LoginComponent,
     SignupComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmojiPickerComponent,
+    TextEditorComponent,
+    FileStructureComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgxSummernoteModule,
+    
  
     // CKEditorModule
   ],

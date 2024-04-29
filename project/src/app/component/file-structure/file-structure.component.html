@@ -1,0 +1,35 @@
+<!-- main.component.html -->
+<div class="flex flex-col space-y-4">
+    <!-- Create File Section -->
+    <div>
+      <h2 class="text-lg font-bold mb-2">Create File</h2>
+      <input type="text" [(ngModel)]="fileName" placeholder="File name"
+             class="border border-gray-300 rounded-md px-3 py-2 w-full" />
+      <textarea [(ngModel)]="fileContent" placeholder="File content"
+                class="border border-gray-300 rounded-md px-3 py-2 w-full h-24 mt-2"></textarea>
+      <button (click)="createFile(fileName, fileContent)"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md mt-2 hover:bg-blue-600">Create File</button>
+    </div>
+  
+    <!-- Create Folder Section -->
+    <div>
+      <h2 class="text-lg font-bold mb-2">Create Folder</h2>
+      <input type="text" [(ngModel)]="folderName" placeholder="Folder name"
+             class="border border-gray-300 rounded-md px-3 py-2 w-full" />
+      <button (click)="createFolder(folderName)"
+              class="bg-green-500 text-white px-4 py-2 rounded-md mt-2 hover:bg-green-600">Create Folder</button>
+    </div>
+  
+    <!-- Display Files and Folders Section -->
+    <div>
+      <h2 class="text-lg font-bold mb-2">Files and Folders</h2>
+      <ul>
+        <li *ngFor="let file of files">
+          {{ file }}
+        </li>
+        <li *ngFor="let folder of folders">
+          {{ folder }}
+        </li>
+      </ul>
+    </div>
+</div>

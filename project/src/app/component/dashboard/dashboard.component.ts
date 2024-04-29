@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent {
+  
   // text: string = ''
   editorContent: string = '';
   banner: boolean = true;
@@ -27,5 +28,18 @@ export class DashboardComponent {
 
   handleBanner(){
     this.banner = !this.banner;
+  }
+
+  removeBanner(){
+    if(this.banner){
+      this.banner = false;
+    }
+  }
+
+  playaudio(){
+    let audio = new Audio();
+    audio.src = "../../../assets/audio.mp3";
+    audio.load();
+    audio.play();
   }
 }
